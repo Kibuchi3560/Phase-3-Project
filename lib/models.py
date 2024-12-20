@@ -3,6 +3,7 @@ from sqlalchemy.orm import relationship
 from database_setup import Base, engine  
 
 class Author(Base):
+
     __tablename__ = 'authors'
 
     id = Column(Integer, primary_key=True)
@@ -10,6 +11,7 @@ class Author(Base):
     books = relationship("Book", back_populates="author")
 
 class Book(Base):
+
     __tablename__ = 'books'
 
     id = Column(Integer, primary_key=True)
@@ -20,6 +22,7 @@ class Book(Base):
     genre = relationship("Genre", back_populates="books")
 
 class Genre(Base):
+    
     __tablename__ = 'genres'
 
     id = Column(Integer, primary_key=True)
