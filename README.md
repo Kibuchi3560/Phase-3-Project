@@ -30,9 +30,9 @@ The **Bookshop Management Application** is a command-line interface (CLI) tool d
 project_root/
 │
 ├── database_setup.py      # Database configuration and session setup.
-├── models.py             # Defines the Author, Book, and Genre models.
 ├── functions.py          # Contains all business logic for CRUD operations.
-├── main.py               # CLI interface for interacting with the application.
+├── models.py             # Defines the Author, Book, and Genre models.
+├── xmain.py               # CLI interface for interacting with the application.
 ├── Pipfile               # Pipenv configuration for managing dependencies.
 ├── Pipfile.lock          # Lockfile for ensuring reproducible environments.
 └── README.md             # Project documentation.
