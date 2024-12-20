@@ -1,4 +1,12 @@
-from functions import add_book, update_book, delete_book, list_books, find_author_by_book, list_genres, search_books_by_author_or_genre, sort_books
+import logging
+
+logging.basicConfig(level=logging.WARNING) 
+logging.getLogger('sqlalchemy.engine').setLevel(logging.WARNING)
+
+from functions import (
+    add_book, update_book, delete_book, list_books, find_author_by_book, 
+    list_genres, search_books_by_author_or_genre, sort_books
+)
 
 def main():
     while True:
